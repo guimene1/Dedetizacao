@@ -1,0 +1,7 @@
+php artisan tinker
+$user = new \App\Models\User();
+$user->name = 'Admin';
+$user->email = 'admin@admin.com';
+$user->password = bcrypt('123456');
+$user->is_admin = true;
+$user->save();
